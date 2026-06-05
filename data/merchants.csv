@@ -1,0 +1,11 @@
+merchant_id,merchant_name,country,category,days_since_signup,verification_status,avg_order_value,num_orders,chargeback_rate,refund_rate,traffic_source,is_high_risk_label
+M001,UrbanWear Co,US,Fashion,120,verified,45.20,3200,0.02,0.05,organic,0
+M002,QuickElectro Deals,CN,Electronics,10,unverified,120.50,200,0.15,0.20,ads,1
+M003,FreshHome Goods,DE,Home,300,verified,60.00,5400,0.01,0.03,organic,0
+M004,FlashTech Hub,NG,Electronics,5,unverified,250.00,80,0.30,0.25,social,1
+M005,StyleCorner,FR,Fashion,90,verified,35.00,2100,0.03,0.04,organic,0
+M006,BargainKing Store,PK,General,7,unverified,90.00,150,0.22,0.18,ads,1
+M007,GreenGarden Supplies,UK,Home,400,verified,75.00,8200,0.01,0.02,organic,0
+M008,DigitalPro Market,IN,Electronics,15,unverified,180.00,300,0.18,0.22,social,1
+M009,Everyday Essentials,US,General,200,verified,25.00,10000,0.005,0.01,organic,0
+M010,Trendify Shop,BR,Fashion,12,unverified,110.00,180,0.20,0.19,ads,1
