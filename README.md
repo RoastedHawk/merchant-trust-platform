@@ -1,98 +1,147 @@
-# Merchant Trust & Fraud Detection Platform
+# Merchant Trust Platform
 
-A portfolio project demonstrating product management, trust & safety systems, merchant risk assessment, and AI-assisted fraud detection for e-commerce platforms.
+AI-assisted commerce safety platform for merchant risk scoring, fraud detection, and onboarding verification.
 
-## Overview
+## Problem
 
-Online marketplaces face increasing abuse from fraudulent merchants, policy evasion, counterfeit goods, refund abuse, and coordinated fraud networks.
+Online commerce platforms face a constant challenge:
 
-This project explores how a commerce platform could:
+- Fraudulent merchants create fake storefronts
+- High-risk merchants generate chargebacks and refunds
+- Excessive manual reviews create operational costs
+- Overly strict controls create onboarding friction for legitimate businesses
 
-* Detect risky merchants during onboarding
-* Streamline verification for legitimate businesses
-* Reduce fraud losses
-* Minimize false positives
-* Scale trust & safety operations
-
-The project combines product strategy, risk management, analytics, and machine learning concepts to simulate a modern commerce safety platform.
+The goal of this project is to simulate how a Commerce Safety team can balance trust, safety, and merchant growth.
 
 ---
 
-## Product Goals
+## Product Vision
 
-* Improve merchant onboarding quality
-* Detect fraudulent merchants earlier
-* Reduce operational review costs
-* Protect shoppers and marketplace integrity
-* Balance safety with merchant growth
+Create a scalable merchant onboarding system that:
 
----
-
-## Planned Features
-
-### Merchant Risk Scoring
-
-Prototype risk model using merchant behavior and verification signals.
-
-### Progressive Verification
-
-Adaptive onboarding workflow that applies additional checks only when risk increases.
-
-### Fraud Analytics Dashboard
-
-Operational dashboard for monitoring fraud trends, review queues, and platform health.
-
-### Merchant Review Queue
-
-Workflow for trust & safety analysts to investigate suspicious merchants.
-
-### Metrics Framework
-
-North-star metrics and KPI design for commerce safety products.
-
-### Experimentation Strategy
-
-A/B testing framework for evaluating onboarding and fraud prevention changes.
+1. Detects risky merchants before activation
+2. Reduces fraud exposure
+3. Minimizes manual review workload
+4. Preserves a smooth onboarding experience for legitimate merchants
 
 ---
 
-## Technology
+## Current Features
 
-* Python
-* Pandas
-* Scikit-learn
-* Jupyter Notebooks
-* Streamlit
-* GitHub
+### Synthetic Merchant Dataset
 
----
+Simulated merchant profiles containing:
 
-## Repository Structure
-
-docs/ → Product requirements and strategy
-
-data/ → Synthetic merchant datasets
-
-notebooks/ → Risk scoring and analysis
-
-dashboard/ → Streamlit application
-
-diagrams/ → Architecture and workflow diagrams
-
-assets/ → Screenshots and visuals
+- Verification status
+- Merchant age
+- Average order value
+- Chargeback rate
+- Refund rate
+- Traffic acquisition source
 
 ---
 
-## Status
+### Rule-Based Risk Engine
 
-🚧 In Development
+Risk scores are generated using interpretable business rules.
 
-Current phase:
+Example signals:
 
-* [x] Repository setup
-* [ ] Product Requirements Document
-* [ ] Synthetic merchant dataset
-* [ ] Risk scoring prototype
-* [ ] Dashboard
-* [ ] Metrics framework
-* [ ] Experimentation plan
+- Unverified merchant
+- High chargeback rate
+- High refund rate
+- Newly created account
+- Unusual transaction behavior
+
+---
+
+### Machine Learning Model
+
+A Logistic Regression model predicts merchant risk using historical merchant signals.
+
+Features include:
+
+- Chargeback rate
+- Refund rate
+- Merchant age
+- Verification status
+- Traffic source
+- Category
+
+---
+
+### Hybrid Risk Scoring
+
+The platform combines:
+
+- Rule-based risk score
+- ML risk probability
+
+into a single hybrid risk score.
+
+---
+
+### Merchant Decisions
+
+Based on risk score thresholds:
+
+| Risk Level | Decision |
+|------------|-----------|
+| Low | APPROVE |
+| Medium | SEND_TO_REVIEW |
+| High | REJECT |
+
+---
+
+### Risk Explanations
+
+The system generates human-readable explanations for risk decisions.
+
+Example:
+
+- Unverified merchant
+- High chargeback rate
+- New merchant account
+
+This improves transparency and reviewer efficiency.
+
+---
+
+## Project Structure
+
+```text
+merchant-trust-platform/
+├── data/
+├── docs/
+├── notebooks/
+├── dashboard/
+├── diagrams/
+├── assets/
+└── README.md
+```
+
+---
+
+## Future Improvements
+
+- Larger synthetic datasets
+- Threshold optimization
+- Fraud network detection
+- Merchant behavior monitoring
+- Streamlit dashboard
+- Human review workflow simulation
+- Explainable AI enhancements
+
+---
+
+## Why This Project
+
+This project was built to explore product management challenges in:
+
+- Commerce Safety
+- Fraud Detection
+- Merchant Trust
+- Risk Scoring Systems
+- AI/ML Product Development
+
+It is designed as a portfolio project inspired by large-scale commerce ecosystems.
